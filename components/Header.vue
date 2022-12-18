@@ -1,17 +1,7 @@
-<script setup lang="ts">
-import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
-
-const callsToAction = [
-    { name: 'Contact Sales', href: '#', icon: 'heroicons:phone' },
-]
-
-
-
-</script>
-
 <template>
-    <header class="sticky top-0 z-50">
-        <div class=" sticky px-4 sm:px-16 top-0 w-full text-white backdrop-blur-sm bg-violet-900/80">
+    <header>
+        <div class="z-50 fixed px-4 sm:px-16 top-0 w-full text-white"
+            :class="[transparentNav ? transparentNavStyles : 'backdrop-blur-sm bg-violet-900/80']">
             <Popover class="relative ">
                 <!-- Deskop Nav -->
                 <div class="mx-auto max-w-[1200px]  ">
@@ -155,9 +145,53 @@ const callsToAction = [
             </Popover>
         </div>
     </header>
+    <div ref="hero" class="hero min-h-screen flex text-white">
+        <div class="m-auto text-center max-w-[1200px] flex flex-col items-center h-full">
+            <p class="text-5xl font-bold px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <NuxtLink to="#services">
+                <button class="text-2xl bg-violet-800  py-2 px-2 my-10 rounded text-white">Our Services</button>
+            </NuxtLink>
+            <Icon name="heroicons:chevron-double-down" size="3rem" class="mt-10 text-white animate-bounce"
+                aria-hidden="true" />
+        </div>
+    </div>
 </template>
+  
+<script setup lang="ts">
+import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
+
+const callsToAction = [
+    { name: 'Contact Sales', href: '#', icon: 'heroicons:phone' },
+]
+const hero = ref<HTMLElement | null>(null)
+const transparentNav = ref(true)
+
+onMounted(() => {
+    if (hero.value) {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                transparentNav.value = entry.isIntersecting
+            })
+        }, {
+            threshold: 0.9
+        })
+        observer.observe(hero.value)
+    }
+})
+
+
+const transparentNavStyles = [
+    'bg-transparent',
+    'drop-shadow-none'
+]
+
+</script>
 
 <style scoped>
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('~/assets/images/hero.jpg');
+}
+
 .router-link-active {
     color: #6366f1 !important;
     text-decoration: underline !important;

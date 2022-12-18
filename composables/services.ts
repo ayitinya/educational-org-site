@@ -1,23 +1,23 @@
 export const services = [
   {
-    serviceName: "Study Abroad",
+    name: "Study Abroad",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
     icon: "material-symbols:school-outline",
-    url: "#",
+    href: "#",
   },
   {
-    serviceName: "Visa Application",
+    name: "Visa Application",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
     icon: "fa-brands:cc-visa",
-    url: "#",
+    href: "#",
   },
   {
-    serviceName: "University Application",
+    name: "University Application",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
     icon: "fluent:clipboard-letter-24-regular",
-    url: "#",
+    href: "#",
   },
 ];

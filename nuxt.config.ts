@@ -7,5 +7,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/image-edge", "nuxt-icon"],
+  modules: ["@nuxt/image-edge", "nuxt-icon", "@nuxt/image-edge"],
+  runtimeConfig: {
+    public: {
+      MAPS_API_KEY: process.env.MAPS_API_KEY,
+    }
+  }
 });

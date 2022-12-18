@@ -1,24 +1,25 @@
 <script setup lang="ts"></script>
 
 <template>
-    <footer class="py-4 px-16 w-full">
-        <div class="max-w-[900px] mx-auto">
+    <footer class="py-4 px-4 sm:px-16 w-full">
+        <div class="max-w-[1200px] mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-4 gap-8 w-full py-4">
-                <span>LOGO</span>
+                <img class="h-8 w-auto sm:h-12"
+                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
                 <ul>
-                    <span>Quick Links</span>
+                    <span class="text-violet-800">Quick Links</span>
                     <li v-for="link, index of navLinks" :key="index">
                         <NuxtLink :to="link.href">{{ link.name }}</NuxtLink>
                     </li>
                 </ul>
                 <ul>
-                    <span>Our Services</span>
+                    <span class="text-violet-800">Our Services</span>
                     <li v-for="service, index of services" :key="index">
-                        <NuxtLink :to="service.url">{{ service.serviceName }}</NuxtLink>
+                        <NuxtLink :to="service.href">{{ service.name }}</NuxtLink>
                     </li>
                 </ul>
                 <ul>
-                    <span>Contact Us</span>
+                    <span class="text-violet-800">Contact Us</span>
                     <address>
                         Kalpohin Lowcost
                         <br />
