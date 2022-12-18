@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'NAAM Global Educational Travel and Tour',
+  title: 'Site By Ayitinya',
   htmlAttrs: {
     'lang': 'en-gb'
   }
