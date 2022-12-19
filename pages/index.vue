@@ -16,7 +16,8 @@
                 </div>
             </div>
         </template>
-        <div class="relative flex flex-col items-center">
+
+        <div class="relative flex flex-col items-center my-8">
             <section class="flex flex-col md:flex-row gap-8 mx-4 sm:mx-16 max-w-[1200px]">
                 <picture class="min-w-[320px] md:max-w-xs brightness-50 z-40 hidden md:block">
                     <img src="~/assets/images/vertical-img.jpg" alt="">
