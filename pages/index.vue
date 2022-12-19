@@ -20,7 +20,9 @@
         <div class="relative flex flex-col items-center my-8">
             <section class="flex flex-col md:flex-row gap-8 mx-4 sm:mx-16 max-w-[1200px]">
                 <picture class="min-w-[320px] md:max-w-xs brightness-50 z-40 hidden md:block">
-                    <img src="~/assets/images/vertical-img.jpg" alt="">
+                    <NuxtImg provider="cloudinary"
+                        src="v1671411641/educational-site/pexels-yan-krukov-8199559_jyon3h.jpg" format="webp"
+                        quality="10" alt="smiling student" />
                 </picture>
                 <div>
                     <h2 class="text-2xl font-semibold pb-4 border-b-4 border-violet-800 w-fit">Why Choose Us</h2>
@@ -50,7 +52,9 @@
             <section class="">
                 <div class="flex flex-col md:flex-row-reverse sm:gap-8 sm:mx-16 max-w-[1200px]">
                     <picture class="min-w-[320px] md:max-w-xs brightness-50 z-40 relative md:bottom-64">
-                        <img src="~/assets/images/vertical-img.jpg" alt="">
+                        <NuxtImg provider="cloudinary"
+                            src="v1671411641/educational-site/pexels-yan-krukov-8199559_jyon3h.jpg" format="webp"
+                            quality="10" alt="smiling student" />
                     </picture>
                     <div class="my-8 mx-4 sm:mx-auto relative md:bottom-32">
                         <h2 class="text-2xl font-semibold pb-4 border-b-4 border-violet-800 w-fit">Who Are We</h2>
@@ -102,8 +106,10 @@
                                 </p>
                                 <footer class="flex gap-4 my-4">
                                     <picture class="flex-shrink-0 flex-grow-0 sm:hidden">
-                                        <img src="~/assets/images/hero.jpg" alt=""
-                                            class="w-[50px] aspect-square rounded-full object-cover object-center">
+                                        <NuxtImg provider="cloudinary"
+                                            src="v1671412273/educational-site/pexels-anastasiya-gepp-1462630_sf4ecb.jpg"
+                                            format="webp" quality="10" alt="smiling student"
+                                            class="w-[50px] aspect-square rounded-full object-cover object-center" />
                                     </picture>
                                     <div>
                                         <cite>John Doe</cite>
@@ -113,8 +119,10 @@
                                 </footer>
                             </blockquote>
                             <picture class="flex-shrink-0 flex-grow-0 hidden sm:block">
-                                <img src="~/assets/images/hero.jpg" alt=""
-                                    class="w-[200px] aspect-square rounded-full object-cover object-center">
+                                <NuxtImg provider="cloudinary"
+                                    src="v1671412273/educational-site/pexels-anastasiya-gepp-1462630_sf4ecb.jpg"
+                                    format="webp" quality="10" alt="smiling student"
+                                    class="w-[200px] aspect-square rounded-full object-cover object-center" />
                             </picture>
                         </div>
                     </div>
@@ -129,6 +137,6 @@
 
 <style scoped>
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("~/assets/images/hero.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dnha19v3n/image/upload/f_webp,q_50/v1671412272/educational-site/ant-rozetsky-HXOllTSwrpM-unsplash_t6c3l2.jpg");
 }
 </style>

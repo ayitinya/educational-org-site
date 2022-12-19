@@ -2,32 +2,32 @@
 const teamMembers = [
     {
         name: 'John Doe',
-        img: 'portrait-2.jpg',
+        img: 'v1671412272/educational-site/ian-dooley-d1UPkiFd04A-unsplash_tydymo.jpg',
         position: 'CEO'
     },
     {
         name: 'Jane Doe',
-        img: 'portrait-1.jpg',
+        img: 'v1671411641/educational-site/pexels-yan-krukov-8199559_jyon3h.jpg',
         position: 'CTO'
     },
     {
         name: 'Peter Doe',
-        img: 'portrait-3.jpg',
+        img: 'v1671412273/educational-site/behrouz-sasani-cEnSr1WRHUY-unsplash_lp3f3w.jpg',
         position: 'CFO'
     },
     {
-        name: 'John Doe',
-        img: 'portrait-2.jpg',
+        name: 'Paul Doe',
+        img: 'v1671412273/educational-site/behrouz-sasani-cEnSr1WRHUY-unsplash_lp3f3w.jpg',
         position: 'CEO'
     },
     {
-        name: 'Jane Doe',
-        img: 'portrait-1.jpg',
+        name: 'Beatrice Doe',
+        img: 'v1671412273/educational-site/pexels-anastasiya-gepp-1462630_sf4ecb.jpg',
         position: 'CTO'
     },
     {
-        name: 'Peter Doe',
-        img: 'portrait-3.jpg',
+        name: 'Patrice Doe',
+        img: 'v1671411641/educational-site/pexels-yan-krukov-8199559_jyon3h.jpg',
         position: 'CFO'
     }
 ]
@@ -118,7 +118,7 @@ const teamMembers = [
                         </h2>
                         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 my-6">
                             <TeamMember v-for="member, index of teamMembers" :key="index"
-                                :img="`/images/team-members/${member.img}`" :name="member.name"
+                                :img="member.img" :name="member.name"
                                 :position="member.position" />
                         </div>
                     </div>
@@ -148,6 +148,8 @@ const teamMembers = [
 <style lang="scss" scoped>
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('~/assets/images/hero.jpg');
+        url('https://res.cloudinary.com/dnha19v3n/image/upload/f_webp,q_50/v1671413097/educational-site/volodymyr-hryshchenko-V5vqWC9gyEU-unsplash_zkl252.jpg');
+    background-position: center;
+    background-size: cover;
 }
 </style>

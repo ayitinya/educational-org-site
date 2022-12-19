@@ -17,6 +17,8 @@
 <style lang="scss" scoped>
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('~/assets/images/hero.jpg');
+        url('https://res.cloudinary.com/dnha19v3n/image/upload/f_webp,q_50/v1671412868/educational-site/pexels-pixabay-207456_ic5s7h.jpg');
+    background-position: center;
+    background-size: cover;
 }
 </style>

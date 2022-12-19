@@ -17,5 +17,10 @@ export default defineNuxtConfig({
     prerender: {
       routes: ['/', '/contact', '/about']
     }
+  },
+  image: {
+    cloudinary: {
+      baseURL: "https://res.cloudinary.com/dnha19v3n/image/upload/",
+    }
   }
 });
