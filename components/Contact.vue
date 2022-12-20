@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full md:my-auto bg-violet-800 text-white flex flex-col items-center">
+    <section class="w-full md:my-auto bg-primary text-white flex flex-col items-center">
         <div class="max-w-[1200px] mx-4 sm:mx-16 my-6 flex flex-col sm:flex-row items-center gap-8">
             <div class="sm:w-1/2 w-full">
                 <h2 class="text-2xl text-center font-semibold pb-4 border-b-4 border-white w-fit my-4">Get In Touch With
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <button type="submit"
-                        class="bg-violet-800 border text-white px-4 py-2 rounded-md my-2">Submit</button>
+                        class="bg-accent hover:bg-accent/75 transition-all text-white px-4 py-2 rounded-md my-2">Submit</button>
                 </form>
             </div>
         </div>

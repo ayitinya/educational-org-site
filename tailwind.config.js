@@ -14,6 +14,11 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        primary: "#151e3f",
+        accent: "#007991",
+        secondary: "#030027"
       }
     },
   },

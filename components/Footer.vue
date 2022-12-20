@@ -7,19 +7,19 @@
                 <img class="h-8 w-auto sm:h-12"
                                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
                 <ul>
-                    <span class="text-violet-800">Quick Links</span>
+                    <span class="text-accent">Quick Links</span>
                     <li v-for="link, index of navLinks" :key="index">
                         <NuxtLink :to="link.href">{{ link.name }}</NuxtLink>
                     </li>
                 </ul>
                 <ul>
-                    <span class="text-violet-800">Our Services</span>
+                    <span class="text-accent">Our Services</span>
                     <li v-for="service, index of services" :key="index">
                         <NuxtLink :to="service.href">{{ service.name }}</NuxtLink>
                     </li>
                 </ul>
                 <ul>
-                    <span class="text-violet-800">Contact Us</span>
+                    <span class="text-accent">Contact Us</span>
                     <address>
                         Kalpohin Lowcost
                         <br />

@@ -39,7 +39,7 @@ const transparentNavStyles = [
 <template>
     <header>
         <div class="z-50 fixed px-4 sm:px-16 top-0 w-full text-white"
-            :class="[transparentNav ? transparentNavStyles : 'backdrop-blur-sm bg-violet-900/80']">
+            :class="[transparentNav ? transparentNavStyles : 'backdrop-blur-sm bg-secondary/80']">
             <Popover class="relative ">
                 <!-- Deskop Nav -->
                 <div class="mx-auto max-w-[1200px]  ">

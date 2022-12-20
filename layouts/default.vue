@@ -32,7 +32,7 @@ const transparentNavStyles = [
     <div class="flex flex-col min-h-screen relative">
         <header>
             <div class="z-50 fixed px-4 sm:px-16 top-0 w-full text-white"
-                :class="[transparentNav ? transparentNavStyles : 'backdrop-blur-sm bg-violet-900/80']">
+                :class="[transparentNav ? transparentNavStyles : 'backdrop-blur-sm bg-primary/80']">
                 <Popover class="relative ">
                     <!-- Deskop Nav -->
                     <div class="mx-auto max-w-[1200px]  ">
@@ -47,7 +47,7 @@ const transparentNavStyles = [
                             </div>
                             <div class="-my-2 -mr-2 lg:hidden">
                                 <PopoverButton
-                                    class="inline-flex items-center justify-center rounded-md p-2 text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    class="inline-flex items-center justify-center rounded-md p-2 text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-seconday-dark">
                                     <span class="sr-only">Open menu</span>
                                     <Icon name="heroicons:bars-3" class="h-6 w-6" aria-hidden="true" />
                                 </PopoverButton>
@@ -80,7 +80,7 @@ const transparentNavStyles = [
                                                     <a v-for="item in services" :key="item.name" :href="item.href"
                                                         class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
                                                         <Icon :name="item.icon"
-                                                            class="h-6 w-6 flex-shrink-0 text-indigo-600"
+                                                            class="h-6 w-6 flex-shrink-0 text-accent"
                                                             aria-hidden="true" />
                                                         <div class="ml-4">
                                                             <p class="text-base font-medium text-gray-900">{{ item.name
@@ -111,7 +111,7 @@ const transparentNavStyles = [
                             </PopoverGroup>
                             <div class="hidden items-center justify-end lg:flex lg:flex-1 lg:w-0">
                                 <a href="#"
-                                    class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">
+                                    class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-accent hover:bg-secondary transition-all px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary-dark">
                                     Call Us
                                     <Icon name="heroicons:phone-20-solid" class="ml-8 h-6 w-6 text-white"
                                         aria-hidden="true" />
@@ -140,7 +140,7 @@ const transparentNavStyles = [
                                         </div>
                                         <div class="-mr-2">
                                             <PopoverButton
-                                                class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                                class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent">
                                                 <span class="sr-only">Close menu</span>
                                                 <Icon name="heroicons:x-mark" class="h-6 w-6" aria-hidden="true" />
                                             </PopoverButton>
@@ -150,7 +150,7 @@ const transparentNavStyles = [
                                         <nav class="grid gap-y-8">
                                             <a v-for="item, index in services" :key="index" :href="item.href"
                                                 class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
-                                                <Icon :name="item.icon" class="h-6 w-6 flex-shrink-0 text-indigo-600"
+                                                <Icon :name="item.icon" class="h-6 w-6 flex-shrink-0 text-accent"
                                                     aria-hidden="true" />
                                                 <span class="ml-3 text-base font-medium text-gray-900">{{ item.name
                                                 }}</span>
@@ -167,7 +167,7 @@ const transparentNavStyles = [
                                     </div>
                                     <div>
                                         <a href="#"
-                                            class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">
+                                            class="flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-accent">
                                             Call Us
                                             <Icon name="heroicons:phone-20-solid" class="ml-8 h-6 w-6 text-white"
                                                 aria-hidden="true" />
@@ -193,7 +193,7 @@ const transparentNavStyles = [
 
 <style scoped>
 .router-link-active {
-    color: #6366f1 !important;
+    color: #007991 !important;
     text-decoration: underline !important;
     text-underline-offset: 1rem !important;
 }

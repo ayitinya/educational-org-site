@@ -38,7 +38,7 @@ const teamMembers = [
     <NuxtLayout name="default">
         <template #hero>
             <header class=" min-h-[400px] w-full flex items-center justify-center">
-                <h1 class="text-4xl font-bold text-white"><span class="bg-violet-800 px-2 py-1">About</span> Company
+                <h1 class="text-4xl font-bold text-white"><span class="bg-accent px-2 py-1">About</span> Company
                 </h1>
             </header>
         </template>
@@ -67,19 +67,19 @@ const teamMembers = [
                 <section class="max-w-[1200px] w-full flex flex-col items-center">
                     <div class="grid grid-cols-1 sm:grid-cols-3 w-full">
                         <div class="flex flex-col items-center my-4">
-                            <Icon name="ph:student" size="3.75rem" class="text-violet-800" />
-                            <h3 class="text-7xl font-bold my-2">100</h3>
-                            <p class="my-2 text-xl text-violet-800">Students</p>
+                            <Icon name="ph:student" size="3.75rem" class="text-accent" />
+                            <span class="text-7xl font-bold my-2">100</span>
+                            <p class="my-2 text-xl text-accent">Students</p>
                         </div>
                         <div class="flex flex-col items-center my-4">
-                            <Icon name="uil:university" size="3.75rem" class="text-violet-800" />
-                            <h3 class="text-7xl font-bold my-2">100</h3>
-                            <p class="my-2 text-xl text-violet-800">Universities</p>
+                            <Icon name="uil:university" size="3.75rem" class="text-accent" />
+                            <span class="text-7xl font-bold my-2">100</span>
+                            <p class="my-2 text-xl text-accent">Universities</p>
                         </div>
                         <div class="flex flex-col items-center my-4">
-                            <Icon name="uil:calender" size="3.75rem" class="text-violet-800" />
-                            <h3 class="text-7xl font-bold my-2">100</h3>
-                            <p class="my-2 text-xl text-violet-800">Years Experience</p>
+                            <Icon name="uil:calender" size="3.75rem" class="text-accent" />
+                            <span class="text-7xl font-bold my-2">100</span>
+                            <p class="my-2 text-xl text-accent">Years Experience</p>
                         </div>
                     </div>
                     <hr class="w-full">
@@ -87,7 +87,7 @@ const teamMembers = [
 
                 <section class="flex flex-col md:flex-row gap-8 mx-4 sm:mx-16 max-w-[1200px] my-8">
                     <div>
-                        <h2 class="text-2xl font-semibold pb-4 border-b-4 border-violet-800 w-fit">Our Story</h2>
+                        <h2 class="text-2xl font-semibold pb-4 border-b-4 border-primary w-fit">Our Story</h2>
                         <p class="mt-6 lg:text-lg sm:columns-2">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, labore molestiae. Nemo,
                             asperiores, eligendi minima quaerat nesciunt incidunt quo, eius impedit cupiditate velit
@@ -112,7 +112,7 @@ const teamMembers = [
                     </div>
                 </section>
 
-                <section class="w-full my-8 md:my-auto bg-violet-800 text-white flex flex-col items-center">
+                <section class="w-full my-8 md:my-auto bg-primary text-white flex flex-col items-center">
                     <div class="max-w-[1200px] mx-4 sm:mx-16 my-6 flex flex-col items-center">
                         <h2 class="text-2xl text-center font-semibold pb-4 border-b-4 border-white w-fit">Meet The Team
                         </h2>
@@ -126,7 +126,7 @@ const teamMembers = [
 
                 <section class="w-full  flex flex-col items-center" id="services">
                     <div class="max-w-[1200px] mx-4 sm:mx-16 my-8 flex flex-col items-center">
-                        <h2 class="text-2xl text-center font-semibold pb-4 border-b-4 border-violet-800 w-fit">Our
+                        <h2 class="text-2xl text-center font-semibold pb-4 border-b-4 border-primary w-fit">Our
                             Services
                         </h2>
                         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 my-6">

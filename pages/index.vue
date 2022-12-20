@@ -8,7 +8,7 @@
                 <div class="m-auto text-center max-w-[1200px] flex flex-col items-center h-full">
                     <p class="text-5xl font-bold px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <NuxtLink to="#services">
-                        <button class="text-2xl bg-violet-800  py-2 px-2 my-10 rounded text-white">Our
+                        <button class="text-2xl bg-accent hover:bg-primary transition-all  py-2 px-2 my-10 rounded text-white">Our
                             Services</button>
                     </NuxtLink>
                     <Icon name="heroicons:chevron-double-down" size="3rem" class="mt-10 text-white animate-bounce"
@@ -25,7 +25,7 @@
                         quality="10" alt="smiling student" />
                 </picture>
                 <div>
-                    <h2 class="text-2xl font-semibold pb-4 border-b-4 border-violet-800 w-fit">Why Choose Us</h2>
+                    <h2 class="text-2xl font-semibold pb-4 border-b-4 border-primary w-fit">Why Choose Us</h2>
                     <p class="mt-6 lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id dolores,
                         doloribus, mollitia modi libero
                         sit
@@ -37,7 +37,7 @@
             </section>
 
             <section
-                class="w-full mt-8 md:my-auto bg-violet-800 text-white relative md:bottom-32 flex flex-col items-center"
+                class="w-full mt-8 md:my-auto bg-primary text-white relative md:bottom-32 flex flex-col items-center"
                 id="services">
                 <div class="max-w-[1200px] mx-4 sm:mx-16 my-8 md:my-40 flex flex-col items-center">
                     <h2 class="text-2xl text-center font-semibold pb-4 border-b-4 border-white w-fit">Our Services
@@ -57,7 +57,7 @@
                             quality="10" alt="smiling student" />
                     </picture>
                     <div class="my-8 mx-4 sm:mx-auto relative md:bottom-32">
-                        <h2 class="text-2xl font-semibold pb-4 border-b-4 border-violet-800 w-fit">Who Are We</h2>
+                        <h2 class="text-2xl font-semibold pb-4 border-b-4 border-primary w-fit">Who Are We</h2>
                         <p class="mt-6 lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id dolores,
                             doloribus, mollitia modi libero
                             sit
@@ -70,28 +70,28 @@
             </section>
 
             <section class="relative md:bottom-32 max-w-[1200px] w-full flex flex-col items-center">
-                <h2 class="text-2xl text-center font-semibold pb-4 border-b-4 border-violet-800 w-fit">We Have
+                <h2 class="text-2xl text-center font-semibold pb-4 border-b-4 border-primary w-fit">We Have
                     Numbers Too</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 w-full">
                     <div class="flex flex-col items-center my-4">
-                        <Icon name="ph:student" size="3.75rem" class="text-violet-800" />
-                        <h3 class="text-7xl font-bold my-2">100</h3>
-                        <p class="my-2 text-xl text-violet-800">Students</p>
+                        <Icon name="ph:student" size="3.75rem" class="text-accent" />
+                        <span class="text-7xl font-bold my-2">100</span>
+                        <p class="my-2 text-xl text-accent">Students</p>
                     </div>
                     <div class="flex flex-col items-center my-4">
-                        <Icon name="uil:university" size="3.75rem" class="text-violet-800" />
-                        <h3 class="text-7xl font-bold my-2">100</h3>
-                        <p class="my-2 text-xl text-violet-800">Universities</p>
+                        <Icon name="uil:university" size="3.75rem" class="text-accent" />
+                        <span class="text-7xl font-bold my-2">100</span>
+                        <p class="my-2 text-xl text-accent">Universities</p>
                     </div>
                     <div class="flex flex-col items-center my-4">
-                        <Icon name="grommet-icons:user-expert" size="3.75rem" class="text-violet-800" />
-                        <h3 class="text-7xl font-bold my-2">100</h3>
-                        <p class="my-2 text-xl text-violet-800">Years Experience</p>
+                        <Icon name="grommet-icons:user-expert" size="3.75rem" class="text-accent" />
+                        <span class="text-7xl font-bold my-2">100</span>
+                        <p class="my-2 text-xl text-accent">Years Experience</p>
                     </div>
                 </div>
             </section>
 
-            <section class="w-full my md:my-auto bg-violet-800 text-white min-h-[300px] px-4 sm:px-16 flex">
+            <section class="w-full my md:my-auto bg-primary text-white min-h-[300px] px-4 sm:px-16 flex">
                 <div class="max-w-[1200px] mx-auto my-10">
                     <h2 class="text-2xl mb-4 font-semibold pb-4 border-b-4 border-white w-fit">Hear What Our Clients
                         Have To Say</h2>
